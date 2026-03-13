@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.A.V. PUBLIC SCHOOL </title>
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #f1f1f1;
+        color: #333;
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        background-color: #003366;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background-color: #004080;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        background-color: #003366;
+        border-radius: 5px;
+      }
+
+      nav .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #004080;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      nav .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+
+      nav .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* Main Section */
+      .main-content {
+        padding: 30px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .notice-board {
+        background-color: #ffcc00;
+        color: black;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .notice-board marquee {
+        font-weight: bold;
+      }
+
+      .about-school {
+        background-color: white;
+        padding: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 40px;
+      }
+
+      .about-school h2 {
+        color: #003366;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .login {
+        background-color: #fff;
+        padding: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .login h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .login input[type="text"],
+      .login input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .login input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #004080;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .login input[type="submit"]:hover {
+        background-color: #003366;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      footer a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+      }
+
+      .social-icons a {
+        margin: 0 15px;
+        font-size: 30px;
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #ffcc00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>D.A.V. PUBLIC SCHOOL </h1>
+      <h3>( AFFILIATED TO CBSE 10+2 ) SCHOOL CODE: 66232</h3>
+      <h5>Affiliation No- 3430018
+        SECTOR - lll, DHURWA, RANCHI - 834004 (JHARKHAND)
+        (Registered Society Act) Reg. No.- 282/11</h5>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="Academics.html">Academics</a>
+        <div class="dropdown-content">
+          <!-- <a href="#">Curriculum</a>
+          <a href="#">Syllabus</a>-->
+        </div>
+      </div>
+      <a href="Admission.html">Admission</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="cources.html">Courses</a>
+      <a href="Gallary.html">Gallery</a>
+      <a href="contactus.html">Contact Us</a>
+      <div class="dropdown">
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <!-- Notice Board (Marquee) -->
+      <div class="notice-board">
+        <marquee scrollamount="10"
+          > Registration open for class XI science and commerce.</marquee
+        >
+      </div>
+    
+
+      <!-- About the School Section -->
+      <div class="about-school">
+        <h2>About School</h2>
+        <h6><!-- Add details about D.A.V Public School Ranchi here -->
+          The D.A.V Institutions are the gift of Arya samaj, a progressive movement founded by Swami Dayanand Saraswati in 1875. Swami Dayanand Saraswati, the great path-maker of modern India, led a crusade against the superstitious and pernicious practices that prevailed in contemporary India.
+With a view to bring about a balanced and harmonious development of the future citizens of this country and to infuse in them the ideals of Vedic Culture and high sense of patriotism, Arya Samaj founded a school at Lahore in 1886.
+        </h6>
+      </div>
+ 
+
+      <!-- Login Form (for both Student and Admin) -->
+      <div class="login">
+        <h3>Login</h3>
+
+         <!-- <form action="/login" method="POST">
+           <input type="text" name="email" placeholder="Username" required />
+           <input type="password" name="password" placeholder="Password" required />
+           <input type="submit" value="Login" />
+        </form> -->
+         
+          <!-- <form id="loginForm">
+            <input type="text" name="email" placeholder="Username" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <input type="submit" value="Login" />
+          </form> -->
+          
+           <form id="loginForm">
+             <input type="email" id="email" name="email" placeholder="Email" required />
+             <input type="password" id="password" name="password" placeholder="Password" required />
+             <input type="submit" value="Login" />
+           </form>
+
+        <!-- <form action="#">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <input type="submit" value="Login" />
+        </form> -->
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html">About School</a>
+        <a href="https://davranchi.com/RuleRegulations.aspx" target="_blank">Rules and Regulations</a>
+        <a href="https://davranchi.com/RuleRegulations.aspx" target="_blank">Fee Structure</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank">
+         <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+    
+      <script>
+document.getElementById("loginForm").addEventListener("submit", async function(e) {
+
+  e.preventDefault();   // stop page reload
+
+  const email = document.querySelector("input[name='email']").value;
+  const password = document.querySelector("input[name='password']").value;
+
+  try {
+
+    const response = await fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    });
+
+    const data = await response.json();
+
+    if(response.ok){
+      alert("Login Successful! Welcome " + email);
+    }
+    else{
+      alert(data.message || "Login Failed");
+    }
+
+  }
+  catch(error){
+    console.error(error);
+    alert("Cannot connect to server");
+  }
+
+});
+</script>
+    
+  </body>
+</html>

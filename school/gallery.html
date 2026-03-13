@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - D.A.V PUBLIC SCHOOL RANCHI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      header {
+        background-color: #004080;
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 45px;
+        letter-spacing: 3px;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background-color: #003366;
+        padding: 15px 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #002244;
+      }
+
+      /* Main Content Section */
+      .main-content {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .gallery-section {
+        margin-bottom: 40px;
+      }
+
+      .gallery-section h2 {
+        color: #003366;
+        font-size: 36px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .gallery-section p {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .gallery-item .info {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        display: none;
+      }
+
+      .gallery-item:hover .info {
+        display: block;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 16px;
+      }
+
+      footer a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      footer a:hover {
+        background-color: #575757;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>D.A.V. PUBLIC SCHOOL </h1>
+      <h3>( AFFILIATED TO CBSE 10+2 ) SCHOOL CODE: 66232</h3>
+      <h5>Affiliation No- 3430018
+        SECTOR - lll, DHURWA, RANCHI - 834004 (JHARKHAND)
+        (Registered Society Act) Reg. No.- 282/11</h5>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="academics.html">Academics</a>
+      <a href="admission.html">Admission</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="courses.html">Courses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <!-- Gallery Overview Section -->
+      <div class="gallery-section">
+        <h2>School Gallery</h2>
+        <p>
+          Welcome to the D.A.V Public School Gallery! Here you will find images
+          from various school events, activities, and memories that make our
+          school special. Browse through our gallery to get a glimpse of life at
+          our school.
+        </p>
+      </div>
+
+      <!-- Gallery Grid Section -->
+      <div class="gallery-grid">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+          <img src="E1.jpeg" alt="Event 1" />
+          <div class="info">Annual Sports Day</div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+          <img src="E2.jpeg" alt="Event 2" />
+          <div class="info">Art and Craft Exhibition</div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+          <img src="E3.jpeg" alt="Event 3" />
+          <div class="info">Cultural Program</div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item">
+          <img src="E4.jpg" alt="Event 4" />
+          <div class="info">Teacher's Day Celebration</div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item">
+          <img src="E5.jpeg" alt="Event 5" />
+          <div class="info">Science Fair</div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item">
+          <img src="E6.jpg" alt="Event 6" />
+          <div class="info">Field Trip to Historical Site</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html">About School</a>
+        <a href="https://davranchi.com/RuleRegulations.aspx" target="_blank">Rules and Regulations</a>
+        <a href="https://davranchi.com/RuleRegulations.aspx" target="_blank">Fee Structure</a>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

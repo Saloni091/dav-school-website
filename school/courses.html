@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - D.A.V PUBLIC SCHOOL RANCHI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      header h1 {
+        font-size: 45px;
+        letter-spacing: 2px;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background-color: #003366;
+        padding: 15px 30px;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #004080;
+      }
+
+      /* Main Content Section */
+      .main-content {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .courses-section {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .courses-section h2 {
+        color: #003366;
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .course-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .course-card {
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .course-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .course-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .course-card .course-info {
+        padding: 20px;
+      }
+
+      .course-card .course-info h3 {
+        color: #003366;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .course-card .course-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .course-card .course-info .btn {
+        display: inline-block;
+        background-color: #004080;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .course-card .course-info .btn:hover {
+        background-color: #003366;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      footer a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      footer a:hover {
+        background-color: #575757;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>D.A.V. PUBLIC SCHOOL </h1>
+      <h3>( AFFILIATED TO CBSE 10+2 ) SCHOOL CODE: 66232</h3>
+      <h5>Affiliation No- 3430018
+        SECTOR - lll, DHURWA, RANCHI - 834004 (JHARKHAND)
+        (Registered Society Act) Reg. No.- 282/11</h5>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="academics.html">Academics</a>
+      <a href="admission.html">Admission</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="courses.html">Courses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <!-- Courses Overview Section -->
+      <div class="courses-section">
+        <h2>Our Offered Courses</h2>
+        <p>
+          Explore the various courses we offer at D.A.V Public School Ranchi.
+          Whether you're interested in Science, Arts, or Commerce, we have a
+          range of courses designed to meet your needs.
+        </p>
+      </div>
+
+      <!-- Course List -->
+      <div class="course-list">
+        <div class="course-card">
+          <img src="Untitled-design-15-1024x533.png" alt="Science Course" />
+          <div class="course-info">
+            <h3>Science Stream</h3>
+            <p>
+              This course covers subjects like Physics, Chemistry, and Biology,
+              providing a strong foundation for students interested in pursuing
+              careers in medicine, engineering, or research.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Science_education" class="btn" target="_blank">Learn More</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img
+            src="E3.jpeg"
+            alt="Commerce Course"
+          />
+          <div class="course-info">
+            <h3>Commerce Stream</h3>
+            <p>
+              Our Commerce Stream includes subjects like Accountancy, Business
+              Studies, and Economics. Ideal for students looking to pursue
+              careers in business, finance, and economics.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Commerce" class="btn" target="_blank">Learn More</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="arts.jpeg" alt="Arts Course" />
+          <div class="course-info">
+            <h3>Arts Stream</h3>
+            <p>
+              The Arts Stream offers subjects such as History, Political
+              Science, Sociology, and Literature. Perfect for students who wish
+              to pursue careers in education, media, and social sciences.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Arts" class="btn" target="_blank">Learn More</a>
+          </div>
+        </div>
+
+        <!-- You can add more courses here in similar structure -->
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About School</a>
+        <a href="rules.html">Rules and Regulations</a>
+        <a href="fee-structure.html">Fee Structure</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // JavaScript logic to handle course interaction can be added here (e.g., modals or AJAX for dynamic course info)
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
