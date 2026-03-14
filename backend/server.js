@@ -89,7 +89,7 @@ const transporter = nodemailer.createTransport({
 LOGIN API
 ====================== */
 
-app.post("/login", (req, res) => {
+app.post("/api/login", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
@@ -122,7 +122,7 @@ If this was not you, please secure your account.`
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           console.log("Email error:", error);
-          return res.status(500).json({ message: "Login done but email not sent" });
+          return res.status(500).json({ message: "Login done " });
         } else {
           console.log("Email sent:", info.response);
           return res.status(200).json({ message: "Login Successful" });
