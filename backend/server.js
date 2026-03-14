@@ -89,7 +89,7 @@ const transporter = nodemailer.createTransport({
 LOGIN API
 ====================== */
 
-app.post("/api/login", (req, res) => {
+app.post("/login", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
