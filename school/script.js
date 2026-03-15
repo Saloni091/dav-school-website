@@ -15,16 +15,16 @@ function toggleMenu() {
 async function submitAdmission() {
 
   const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
+  const email = document.getElementById("admissionEmail").value;
   const phone = document.getElementById("phone").value;
-  const course = document.getElementById("course").value;
+  const classApplying = document.getElementById("class").value;
   const address = document.getElementById("address").value;
 
   const data = {
     name,
     email,
     phone,
-    course,
+    classApplying: course,
     address
   };
 
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
     loginForm.addEventListener("submit", async function (e) {
       e.preventDefault();
 
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
+      const email = document.getElementById("loginEmail").value.trim();
+      const password = document.getElementById("loginPassword").value.trim();
 
       try {
         const response = await fetch("/api/login", {
@@ -108,10 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
         name: document.getElementById("studentName").value,
         dob: document.getElementById("dob").value,
         parentName: document.getElementById("parentName").value,
-        email: document.getElementById("email").value,
+        email: document.getElementById("admissionEmail").value,
         phone: document.getElementById("contact").value,
         address: document.getElementById("address").value,
-        course: document.getElementById("class").value
+        classApplying: document.getElementById("class").value
       };
 
       try {

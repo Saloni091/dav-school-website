@@ -122,7 +122,7 @@ If this was not you, please secure your account.`
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
           console.log("Email error:", error);
-          return res.status(500).json({ message: "Login done " });
+          return res.status(500).json({ message: "Login Successful but email not sent" });
         } else {
           console.log("Email sent:", info.response);
           return res.status(200).json({ message: "Login Successful" });
